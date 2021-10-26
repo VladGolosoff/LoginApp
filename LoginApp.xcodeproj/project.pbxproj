@@ -13,6 +13,7 @@
 		148FFF1D27288F2A00C59DFE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 148FFF1B27288F2A00C59DFE /* Main.storyboard */; };
 		148FFF1F27288F2B00C59DFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 148FFF1E27288F2B00C59DFE /* Assets.xcassets */; };
 		148FFF2227288F2B00C59DFE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 148FFF2027288F2B00C59DFE /* LaunchScreen.storyboard */; };
+		14CCBA702728948700497731 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14CCBA6F2728948700497731 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		148FFF1E27288F2B00C59DFE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		148FFF2127288F2B00C59DFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		148FFF2327288F2B00C59DFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14CCBA6F2728948700497731 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				148FFF1727288F2A00C59DFE /* SceneDelegate.swift */,
 				148FFF1927288F2A00C59DFE /* ViewController.swift */,
 				148FFF1B27288F2A00C59DFE /* Main.storyboard */,
+				14CCBA6F2728948700497731 /* LoginViewController.swift */,
 				148FFF1E27288F2B00C59DFE /* Assets.xcassets */,
 				148FFF2027288F2B00C59DFE /* LaunchScreen.storyboard */,
 				148FFF2327288F2B00C59DFE /* Info.plist */,
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14CCBA702728948700497731 /* LoginViewController.swift in Sources */,
 				148FFF1A27288F2A00C59DFE /* ViewController.swift in Sources */,
 				148FFF1627288F2A00C59DFE /* AppDelegate.swift in Sources */,
 				148FFF1827288F2A00C59DFE /* SceneDelegate.swift in Sources */,
@@ -295,6 +299,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -306,7 +311,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -323,6 +328,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -334,7 +340,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
