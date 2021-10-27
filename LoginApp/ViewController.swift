@@ -18,7 +18,10 @@ class ViewController: UIViewController {
 
     }
     @IBAction func loginTapped(_ sender: UIButton) {
-    }
+        if loginText.text == "User" && passwordText.text == "Password" {
+        performSegue(withIdentifier: "loginSegue", sender: nil)
+        }
+        }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let destinationView = segue.destination as? LoginViewController else {return}

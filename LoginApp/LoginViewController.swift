@@ -13,10 +13,8 @@ class LoginViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        guard let login = login else {
-            return
-        }
-
+        
+        guard let login = login else { return }
         welcomeLabel.text = "Hello, \(login)"
     }
     
