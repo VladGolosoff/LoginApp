@@ -25,29 +25,6 @@
                                     <action selector="loginTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GWW-5o-Pk6"/>
                                 </connections>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="84" translatesAutoresizingMaskIntoConstraints="NO" id="Scz-IF-bz7">
-                                <rect key="frame" x="20" y="219" width="374" height="48"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cnx-ZX-6ud">
-                                        <rect key="frame" x="0.0" y="0.0" width="145" height="48"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Forgot User Name?"/>
-                                        <connections>
-                                            <action selector="forgotButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PoJ-qP-DRC"/>
-                                            <action selector="forgotUsernameButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hox-Ma-eV8"/>
-                                            <action selector="forgotUsernameButtonPreesed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7I5-hn-sJF"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yi0-kc-FTI">
-                                        <rect key="frame" x="229" y="0.0" width="145" height="48"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Forgot Password?"/>
-                                        <connections>
-                                            <action selector="forgotPasswordButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NMD-Ep-RFt"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                            </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="DlN-zD-F1H">
                                 <rect key="frame" x="40" y="84" width="334" height="95"/>
                                 <subviews>
@@ -63,23 +40,44 @@
                                     </textField>
                                 </subviews>
                             </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="200" translatesAutoresizingMaskIntoConstraints="NO" id="QT2-M4-Xpo">
+                                <rect key="frame" x="20" y="219" width="374" height="65"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Fi-7f-pLz">
+                                        <rect key="frame" x="0.0" y="0.0" width="87" height="65"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Forgot User Name?"/>
+                                        <connections>
+                                            <action selector="forgotNameTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="A9f-a8-0nG"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Anv-ZN-Jjb">
+                                        <rect key="frame" x="287" y="0.0" width="87" height="65"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Forgot password?"/>
+                                        <connections>
+                                            <action selector="forgotPassButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="91O-RE-oHQ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Scz-IF-bz7" firstAttribute="top" secondItem="DlN-zD-F1H" secondAttribute="bottom" constant="40" id="7BV-Vy-8Ti"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Scz-IF-bz7" secondAttribute="trailing" constant="20" id="9Cm-GC-TSi"/>
                             <constraint firstItem="DlN-zD-F1H" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="FaI-K4-T3W"/>
                             <constraint firstItem="zxq-aM-C08" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="YFy-1Q-Ndf"/>
                             <constraint firstItem="zxq-aM-C08" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZNX-9j-ZHw"/>
+                            <constraint firstItem="QT2-M4-Xpo" firstAttribute="top" secondItem="DlN-zD-F1H" secondAttribute="bottom" constant="40" id="b9g-ai-WLn"/>
                             <constraint firstItem="DlN-zD-F1H" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="bCe-zp-xnp"/>
-                            <constraint firstItem="Scz-IF-bz7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="bDF-9L-76s"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QT2-M4-Xpo" secondAttribute="trailing" constant="20" id="brQ-0o-Xmf"/>
+                            <constraint firstItem="QT2-M4-Xpo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="e1L-EI-DbJ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DlN-zD-F1H" secondAttribute="trailing" constant="40" id="jLB-hS-koE"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="forgotPassword" destination="Yi0-kc-FTI" id="Wkr-xA-1eT"/>
-                        <outlet property="forgotUserName" destination="cnx-ZX-6ud" id="aLm-eD-4dF"/>
+                        <outlet property="forgotPasswordButton" destination="Anv-ZN-Jjb" id="y1r-jl-i96"/>
+                        <outlet property="forgotUsernameButton" destination="1Fi-7f-pLz" id="4ZB-28-9KI"/>
                         <outlet property="loginText" destination="8c2-Lp-zy4" id="0kX-cH-iGD"/>
                         <outlet property="passwordText" destination="16p-ap-pGA" id="4Na-Tl-zBU"/>
                         <segue destination="a6m-CJ-YZ7" kind="show" identifier="loginSegue" id="qPW-Qs-3wL"/>
