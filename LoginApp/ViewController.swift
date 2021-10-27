@@ -8,18 +8,23 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet var loginText: UITextField!
+    @IBOutlet var passwordText: UITextField!
     @IBOutlet var forgotUserName: UIButton!
     @IBOutlet var forgotPassword: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    }
 
-    @IBAction func forgotButtonPressed(_ sender: UIButton) {
-        
+    }
+    @IBAction func loginTapped(_ sender: UIButton) {
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let destinationView = segue.destination as? LoginViewController else {return}
+        destinationView.login = loginText.text
+    }
     }
     
     
-}
 
