@@ -19,6 +19,11 @@ class ViewController: UIViewController {
         super.viewDidLoad()
     }
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super .touchesBegan(touches, with: event)
+    }
+
+    
     private func showAlert(title: String, messege: String) {
         let alert = UIAlertController(title: title, message: messege, preferredStyle: .alert)
         let allCorrect = UIAlertAction(title: "OK", style: .default) {_ in
@@ -49,6 +54,13 @@ class ViewController: UIViewController {
         guard let destinationView = segue.destination as? LoginViewController else {return}
         destinationView.login = loginText.text
     }
+    
+   @IBAction func unwind(for segue: UIStoryboardSegue) {
+       guard segue.source is LoginViewController else {return}
+            loginText.text = ""
+            passwordText.text = ""
+    
+            }
     }
     
     
