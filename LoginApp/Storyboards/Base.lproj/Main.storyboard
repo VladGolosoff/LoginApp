@@ -101,13 +101,23 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yO0-eQ-A4T">
+                                <rect key="frame" x="169.5" y="432.5" width="75.5" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Log Out"/>
+                                <connections>
+                                    <segue destination="Iak-jM-a7y" kind="unwind" unwindAction="unwindFor:" id="1id-PZ-0Al"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="cgq-LU-oZv"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="KI2-RQ-LAk" firstAttribute="top" secondItem="cgq-LU-oZv" secondAttribute="top" constant="40" id="J4t-Ef-2jR"/>
-                            <constraint firstItem="KI2-RQ-LAk" firstAttribute="leading" secondItem="cgq-LU-oZv" secondAttribute="leading" constant="40" id="dHB-HP-xEg"/>
-                            <constraint firstItem="cgq-LU-oZv" firstAttribute="trailing" secondItem="KI2-RQ-LAk" secondAttribute="trailing" constant="40" id="ekP-HZ-Gj6"/>
+                            <constraint firstItem="yO0-eQ-A4T" firstAttribute="centerX" secondItem="tct-68-EIb" secondAttribute="centerX" id="5kb-l7-sdO"/>
+                            <constraint firstItem="cgq-LU-oZv" firstAttribute="trailing" secondItem="KI2-RQ-LAk" secondAttribute="trailing" constant="40" id="Emx-Af-2Hl"/>
+                            <constraint firstItem="yO0-eQ-A4T" firstAttribute="centerY" secondItem="tct-68-EIb" secondAttribute="centerY" id="RUb-qx-Ip3"/>
+                            <constraint firstItem="KI2-RQ-LAk" firstAttribute="leading" secondItem="cgq-LU-oZv" secondAttribute="leading" constant="40" id="SaH-gV-yd2"/>
+                            <constraint firstItem="KI2-RQ-LAk" firstAttribute="top" secondItem="cgq-LU-oZv" secondAttribute="top" constant="40" id="UxM-cV-AEt"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="D3y-n8-zeR"/>
@@ -116,6 +126,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kNE-xt-vC2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="Iak-jM-a7y" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="656.52173913043487" y="83.705357142857139"/>
         </scene>
