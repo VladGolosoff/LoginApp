@@ -12,12 +12,7 @@ class ViewController: UIViewController {
     @IBOutlet var passwordText: UITextField!
     @IBOutlet var forgotUsernameButton: UIButton!
     @IBOutlet var forgotPasswordButton: UIButton!
-    
 
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super .touchesBegan(touches, with: event)
@@ -32,20 +27,22 @@ class ViewController: UIViewController {
         alert.addAction(allCorrect)
         present(alert , animated: true)
     }
+    
     @IBAction func forgotNameTap(_ sender: UIButton) {
-        showAlert(title: "Oops!", messege: "Your name is Username")
+        showAlert(title: "Oops!", messege: "Your name is \(user.name)")
     }
     @IBAction func forgotPassButton(_ sender: UIButton) {
-        showAlert(title: "Oops!", messege: "Your password is Password")
+        showAlert(title: "Oops!", messege: "Your password is \(user.password)")
     }
     
     
     
     @IBAction func loginTapped(_ sender: UIButton) {
-        if loginText.text == "Username" && passwordText.text == "Password" {
+        if loginText.text == user.login && passwordText.text == user.password {
             performSegue(withIdentifier: "loginSegue", sender: nil)
         } else {
-            showAlert(title: "Invalid username or password!", messege: "Please, enter correct username or password")
+            showAlert(title: "Invalid username or password!",
+                      messege: "Please, enter correct username or password")
         }
     }
 

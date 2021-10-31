@@ -14,8 +14,8 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        guard let login = login else { return }
-        welcomeLabel.text = "Hello, \(login)"
+        guard login != nil else { return }
+        welcomeLabel.text = "Hello, \(user.name) \(user.surname)"
     }
     
 
