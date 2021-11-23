@@ -14,6 +14,7 @@
 		148FFF1F27288F2B00C59DFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 148FFF1E27288F2B00C59DFE /* Assets.xcassets */; };
 		148FFF2227288F2B00C59DFE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 148FFF2027288F2B00C59DFE /* LaunchScreen.storyboard */; };
 		14A53EB5272EE20B0081A941 /* PersonInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A53EB4272EE20B0081A941 /* PersonInfo.swift */; };
+		14A53EB7273017EC0081A941 /* MoreInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A53EB6273017EC0081A941 /* MoreInfoViewController.swift */; };
 		14CCBA702728948700497731 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14CCBA6F2728948700497731 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +28,7 @@
 		148FFF2127288F2B00C59DFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		148FFF2327288F2B00C59DFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		14A53EB4272EE20B0081A941 /* PersonInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonInfo.swift; sourceTree = "<group>"; };
+		14A53EB6273017EC0081A941 /* MoreInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MoreInfoViewController.swift; path = LoginApp/ViewControllers/MoreInfoViewController.swift; sourceTree = SOURCE_ROOT; };
 		14CCBA6F2728948700497731 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -83,6 +85,7 @@
 			children = (
 				148FFF1927288F2A00C59DFE /* ViewController.swift */,
 				14CCBA6F2728948700497731 /* LoginViewController.swift */,
+				14A53EB6273017EC0081A941 /* MoreInfoViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -187,6 +190,7 @@
 				14CCBA702728948700497731 /* LoginViewController.swift in Sources */,
 				14A53EB5272EE20B0081A941 /* PersonInfo.swift in Sources */,
 				148FFF1A27288F2A00C59DFE /* ViewController.swift in Sources */,
+				14A53EB7273017EC0081A941 /* MoreInfoViewController.swift in Sources */,
 				148FFF1627288F2A00C59DFE /* AppDelegate.swift in Sources */,
 				148FFF1827288F2A00C59DFE /* SceneDelegate.swift in Sources */,
 			);

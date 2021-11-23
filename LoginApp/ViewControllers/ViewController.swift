@@ -12,6 +12,7 @@ class ViewController: UIViewController {
     @IBOutlet var passwordText: UITextField!
     @IBOutlet var forgotUsernameButton: UIButton!
     @IBOutlet var forgotPasswordButton: UIButton!
+   let user = mainUser
 
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -48,8 +49,18 @@ class ViewController: UIViewController {
 
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let destinationView = segue.destination as? LoginViewController else {return}
-        destinationView.login = loginText.text
+        guard let tabBarController = segue.destination as? UITabBarController else { return }
+        guard let viewControllers = tabBarController.viewControllers else { return }
+        
+        for viewController in viewControllers {
+            if let LogInViewController = viewController as? LoginViewController {
+                LoginViewController.= mainUser
+            } else if let navigationViewController = viewController as? UINavigationController {
+                let MoreInfoViewController = navigationViewController.topViewController as! MoreInfoViewController
+               MoreInfoViewController.user = user
+            }
+        }
+     
     }
     
    @IBAction func unwind(for segue: UIStoryboardSegue) {
